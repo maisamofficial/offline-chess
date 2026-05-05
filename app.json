@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Chess Offline",
+    "slug": "chess-offline",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0d0d0d"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0d0d0d"
+      },
+      "package": "com.maisamabbas0323.chessoffline"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "89a3632c-03c7-4fdc-9413-ac6c05aa3bd4"
+      }
+    }
+  }
+}
