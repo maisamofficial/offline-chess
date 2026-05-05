@@ -1,75 +1,72 @@
-# Chess Offline ♟
+# ♟️ Chess Offline
 
-A fully offline chess app built with React Native Expo. Play against 12 AI bots with no internet required.
+A clean, powerful, and completely offline chess application built with **React Native** and **Expo**. Play against various AI difficulty levels anywhere, anytime.
 
-## Features
-- 12 AI bots from ELO 200 to ELO 2500
-- Full chess rules — castling, en passant, promotion
-- Hint system with configurable limit
-- Undo system with configurable limit
-- Move history in algebraic notation
-- Multiple time controls — Bullet to Classical
-- 5 board themes
-- Captured pieces display with material advantage
-- Win/loss/draw stats per bot
-- 100% offline — no internet, no login, no ads
+![Project Icon](./assets/icon.png)
 
-## Setup
+## 🚀 Features
 
-### 1. Install dependencies
-```bash
-npm install
-```
+- **Offline Play:** No internet connection required.
+- **Smart AI Bots:** Challenge yourself against three distinct difficulty levels:
+  - 🟢 **Easy:** Perfect for beginners learning the ropes.
+  - 🟡 **Normal:** A solid challenge for intermediate players.
+  - 🔴 **Expert:** Uses optimized minimax algorithms for advanced play.
+- **Sleek UI:** Dark-themed, modern interface for a focused gaming experience.
+- **Move History:** Keep track of your matches with a built-in move log.
+- **Sound Effects:** Immersive audio feedback for moves and game states.
+- **State Persistence:** Automatically saves your settings and game progress.
 
-### 2. Start the app
-```bash
-npx expo start
-```
+## 🛠️ Tech Stack
 
-### 3. Run on device
-- Press `a` for Android emulator
-- Press `i` for iOS simulator
-- Scan QR code with Expo Go app on your phone
+- **Framework:** [React Native](https://reactnative.dev/) with [Expo](https://expo.dev/)
+- **Navigation:** React Navigation
+- **Engine:** Custom TypeScript Chess Engine (Minimax with Alpha-Beta Pruning)
+- **Styling:** React Native StyleSheet
+- **Icons:** Expo Vector Icons
 
-## Project Structure
-```
-App.tsx                        # Entry point + navigation
-src/
-  engine/
-    chess.ts                   # Full chess rules & legal moves
-    evaluation.ts              # Position evaluation
-    minimax.ts                 # Minimax with alpha-beta pruning
-    bots.ts                    # All 12 bot definitions
-  screens/
-    HomeScreen.tsx
-    BotSelectScreen.tsx
-    GameScreen.tsx
-    ResultScreen.tsx
-    SettingsScreen.tsx
-    HowToPlayScreen.tsx
-  components/
-    ChessBoard.tsx             # Interactive board
-    MoveHistory.tsx            # Move history panel
-    CapturedPieces.tsx         # Captured pieces display
-    Timer.tsx                  # Chess clock
-  constants/
-    themes.ts                  # Board themes, time controls, settings
-  utils/
-    storage.ts                 # AsyncStorage helpers
-```
+## 📋 Prerequisites
 
-## Bots
-| Bot | ELO | Difficulty |
-|-----|-----|------------|
-| 🍼 Baby Bot | 200 | Beginner |
-| 🦀 Rusty Rook | 400 | Beginner |
-| ♟ Pawn Pusher | 600 | Easy |
-| 🐴 Knight Rider | 800 | Easy |
-| ⛪ Bishop Storm | 1000 | Medium |
-| 🏰 Castle King | 1200 | Medium |
-| ⚡ Tactical Tony | 1400 | Medium |
-| ♞ Positional Pete | 1600 | Hard |
-| 🎯 Endgame Edgar | 1800 | Hard |
-| 👑 The Grandmaster | 2200 | Expert |
-| 🌑 Shadow Bot | 2500 | Master |
-| 🎲 Chaos Agent | 999 | Easy |
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or newer)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Expo Go](https://expo.dev/expo-go) app on your mobile device (to test locally)
+
+## 🏃 How to Run
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/maisamofficial/offline-chess.git
+   cd offline-chess
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npx expo start
+   ```
+
+4. **Open the app:**
+   - Scan the QR code with your **Expo Go** app (Android) or Camera app (iOS).
+   - Press `a` for Android Emulator or `i` for iOS Simulator.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 👤 Author
+
+**Maisam Abbas**
+- GitHub: [@maisamofficial](https://github.com/maisamofficial)
+
+---
+*Made with ❤️ for the Chess Community*
